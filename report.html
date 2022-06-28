@@ -73,9 +73,9 @@
       <div class="client-logo" style="padding:15px"></div>
       <div class="bg-primary" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
         <h3>Summary</h3><br>
-        <p class="lead">Start Time: Tue Jun 28 2022 18:49:18 GMT-0300 (Horário Padrão de Brasília)</p>
+        <p class="lead">Start Time: Tue Jun 28 2022 20:51:17 GMT-0300 (Horário Padrão de Brasília)</p>
         <p class="lead">Browsers: Chrome 101.0.4951.41 / Linux 0.0</p>
-        <p class="lead">Duration: 6m 09s</p>
+        <p class="lead">Duration: 58s</p>
         <p class="lead">Tests Failed: 1 out of 9</p>
         <p class="lead">Tests Skipped: 0</p>
       </div><br>
@@ -96,7 +96,7 @@
   <td>Testes usando testcafe</td>
   <td>1- Histórico acadêmico: Verificar a exibição da tabela</td>
   <td>Chrome 101.0.4951.41 / Linux 0.0</td>
-  <td>1m 19s</td>
+  <td>12s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
@@ -104,7 +104,7 @@
   <td>Testes usando testcafe</td>
   <td>2- Atividades complementares: Verificar exibição da mensagem</td>
   <td>Chrome 101.0.4951.41 / Linux 0.0</td>
-  <td>33s</td>
+  <td>5s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
@@ -112,7 +112,7 @@
   <td>Testes usando testcafe</td>
   <td>3- Pedidos (notas): Verificar exibição da mensagem</td>
   <td>Chrome 101.0.4951.41 / Linux 0.0</td>
-  <td>48s</td>
+  <td>4s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
@@ -120,7 +120,7 @@
   <td>Testes usando testcafe</td>
   <td>4- Consulta de pedidos (notas): Verificar exibição da mensagem</td>
   <td>Chrome 101.0.4951.41 / Linux 0.0</td>
-  <td>34s</td>
+  <td>5s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
@@ -128,7 +128,7 @@
   <td>Testes usando testcafe</td>
   <td>5- Requerimentos: Verificar requerimentos existentes</td>
   <td>Chrome 101.0.4951.41 / Linux 0.0</td>
-  <td>32s</td>
+  <td>6s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
@@ -136,7 +136,7 @@
   <td>Testes usando testcafe</td>
   <td>6- Nota de estágio: Verificar exibição da tabela</td>
   <td>Chrome 101.0.4951.41 / Linux 0.0</td>
-  <td>34s</td>
+  <td>6s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
@@ -144,7 +144,7 @@
   <td>Testes usando testcafe</td>
   <td>7- Quadro de Pré/Co Requisitos: Verificar a exibição das informações</td>
   <td>Chrome 101.0.4951.41 / Linux 0.0</td>
-  <td>35s</td>
+  <td>5s</td>
   <td>passed</td>
  </tr>
  <tr class="success">
@@ -152,7 +152,7 @@
   <td>Testes usando testcafe</td>
   <td>8- Tesouraria: Verificar dados</td>
   <td>Chrome 101.0.4951.41 / Linux 0.0</td>
-  <td>33s</td>
+  <td>8s</td>
   <td>passed</td>
  </tr>
  <tr class="danger">
@@ -160,7 +160,7 @@
   <td>Testes usando testcafe</td>
   <td>9- Pedidos de prova presencial</td>
   <td>Chrome 101.0.4951.41 / Linux 0.0</td>
-  <td>41s</td>
+  <td>7s</td>
   <td><a href="#test-9">failed</a></td>
  </tr>
 
@@ -183,17 +183,16 @@
 
 Browser: Chrome 101.0.4951.41 / Linux 0.0
 
-   178 |  const element = Selector(PortalElements.testRequests.course).innerText;
-   179 |
-   180 |  await t
-   181 |    .click(PortalElements.grades)
-   182 |    .expect(element.visible)
- &gt; 183 |    .ok()
-   184 |    .takeScreenshot();
-   185 |&#125);
-   186 |
+   170 |  const element = Selector(PortalElements.testRequests.course).innerText;
+   171 |
+   172 |  await t
+   173 |    .click(PortalElements.grades)
+   174 |    .expect(element.visible)
+ &gt; 175 |    .ok();
+   176 |&#125);
+   177 |
 
-   at &lt;anonymous&gt; (/home/aurea/Área de Trabalho/Pasta/TCC/TESTCAFE_TCC/TestCafe_TCC/tests/basic.test.js:183:6)
+   at &lt;anonymous&gt; (/home/aurea/Área de Trabalho/Pasta/TCC/TESTCAFE_TCC/TestCafe_TCC/tests/basic.test.js:175:6)
    at asyncGeneratorStep (/home/aurea/Área de Trabalho/Pasta/TCC/TESTCAFE_TCC/TestCafe_TCC/tests/basic.test.js:4:161)
    at _next (/home/aurea/Área de Trabalho/Pasta/TCC/TESTCAFE_TCC/TestCafe_TCC/tests/basic.test.js:4:499) </pre><br>
     </div>
