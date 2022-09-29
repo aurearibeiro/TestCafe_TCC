@@ -32,7 +32,9 @@ npm install ou yarn install - Instala todas as dependências necessárias.
 ```
 
 ### Iniciando a aplicação
-Para rodar os testes, abra o terminal do VsCode e digite o comando:
+Antes de rodar os comandos para iniciar os testes, é preciso preencher os campos de login (email, curso, matricula e senha) no arquivo login.json. 
+
+A seguir, para rodar os testes, abra o terminal do VsCode e digite o comando:
 ```
 npm test ou yarn test
 ```
