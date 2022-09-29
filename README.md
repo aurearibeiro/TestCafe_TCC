@@ -4,6 +4,7 @@
 - [Como executar](#-como-executar)
 
 ## 💻 Sobre
+O TestCafe é uma ferramenta javascript que permite rodar testes de frontend como testes end-to-end.
 Este é um projeto utilizando o testcafe, uma ferramenta javascript, para rodar teste de software no portal do Inatel.
 
 ## 🚀 Como executar
