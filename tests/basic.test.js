@@ -5,11 +5,11 @@ import { FormRatingElements } from "./elements/formRating.elements";
 
 fixture`Testes usando testcafe`.beforeEach(async (t) => {
   await t.useRole(regularUser);
-  const info = Selector(FormRatingElements.formRating);
+  /* const info = Selector(FormRatingElements.formRating);
 
   if (await info.exists) {
     await t.click(FormRatingElements.button);
-  }
+  } */
 });
 
 const req = Selector(PortalElements.requirements.requirementOption);
@@ -162,15 +162,4 @@ test(`8- Tesouraria: Verificar dados`, async (t) => {
     .contains("Chave Pix (CNPJ):")
     .expect(tableBankDetails.nth(15).innerText)
     .contains("24.492.886/0001-04");
-});
-
-test(`9- Pedidos de prova presencial`, async (t) => {
-  await t.click(PortalElements.testRequests.access);
-
-  const element = Selector(PortalElements.testRequests.course).innerText;
-
-  await t
-    .click(PortalElements.grades)
-    .expect(element.visible)
-    .ok();
 });
