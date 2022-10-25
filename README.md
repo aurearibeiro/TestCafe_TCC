@@ -32,7 +32,15 @@ npm install ou yarn install - Instala todas as dependências necessárias.
 ```
 
 ### Iniciando a aplicação
-Antes de rodar os comandos para iniciar os testes, é preciso preencher os campos de login (email, curso, matricula e senha) no arquivo login.json. 
+Antes de rodar os comandos para iniciar os testes, é preciso preencher os campos de login (matricula, senha, email e curso) no arquivo login.json no formato abaixo:
+```
+{
+  "matricula": "<mat>",
+  "senha": "<senha>",
+  "email": "<email>",
+  "curso": "<curso>"
+}
+```
 
 A seguir, para rodar os testes, abra o terminal do VsCode e digite o comando:
 ```
