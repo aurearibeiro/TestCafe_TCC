@@ -1,6 +1,6 @@
 {
-  "email": "<email>",
-  "curso": "<curso>",
   "matricula": "<mat>",
-  "senha": "<senha>"
+  "senha": "<senha>",
+  "email": "<email>",
+  "curso": "<curso>"
 }
