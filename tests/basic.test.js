@@ -1,15 +1,9 @@
 import { Selector } from "testcafe";
 import { PortalElements } from "./elements/portal.elements";
 import { regularUser } from "./roles/roles";
-import { FormRatingElements } from "./elements/formRating.elements";
 
 fixture`Testes usando testcafe`.beforeEach(async (t) => {
   await t.useRole(regularUser);
-  /* const info = Selector(FormRatingElements.formRating);
-
-  if (await info.exists) {
-    await t.click(FormRatingElements.button);
-  } */
 });
 
 const req = Selector(PortalElements.requirements.requirementOption);
