@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { Selector } from "testcafe";
 import { PortalElements } from "./elements/portal.elements";
 import { regularUser } from "./roles/roles";

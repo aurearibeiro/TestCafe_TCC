@@ -1,7 +1,6 @@
 import { Role } from "testcafe";
 import { Selector } from "testcafe";
 import { LoginElements } from "../elements/login.elements";
-import { FormCovidElements } from "../elements/formCovid.elements";
 import config from "../../login.json";
 
 const authType = Selector(LoginElements.authType);
@@ -26,20 +25,6 @@ const regularUser = Role(
       .typeText(LoginElements.inputRegistration, config.matricula)
       .typeText(LoginElements.inputPassword, config.senha)
       .click(LoginElements.buttonLogin);
-
-    const form = Selector(FormCovidElements.form);
-
-    if (await form.exists) {
-      await t
-        .click(FormCovidElements.answer1)
-        .click(FormCovidElements.answer2)
-        .click(FormCovidElements.answer3)
-        .click(FormCovidElements.answer4)
-        .click(FormCovidElements.answer5)
-        .click(FormCovidElements.answer6)
-        .click(FormCovidElements.buttonConfirm)
-        .click(FormCovidElements.buttonContinue);
-    }
   },
   { preserveUrl: true }
 );
